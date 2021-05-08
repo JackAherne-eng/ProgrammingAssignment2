@@ -12,10 +12,11 @@ public class Manager extends Employee{
     private int grade;
 
     /**
-     * Constructor for objects of class Employee
+     * Constructor for objects of class Manager
      * @param grade constructs the grade of wage for the Manager
      *              and if the Grade isn't valid (using Grade)
      *              it sets the default value to 1.
+     * Also instantiates the dept ArrayList.
      */
     public Manager(String firstName, String secondName, String ppsNumber, int grade) {
         super(firstName, secondName, ppsNumber);
@@ -30,6 +31,9 @@ public class Manager extends Employee{
         this.dept = new ArrayList<Employee>();
     }
 
+    //-------
+    //methods
+    //-------
     /**
      * Using a method from Assignment 1 called "noOfNationalPlayersByClub"
      * I used the basis for this to calculated the dept size and multiplying this by
@@ -117,6 +121,9 @@ public class Manager extends Employee{
                 && this.getGrade() == otherManager.grade;
     }
 
+    //-------
+    //toString
+    //-------
     /**
      * Builds a String representing a user friendly representation of the object state
      * @return Details of the specific users dept and grade of pay.

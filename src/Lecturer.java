@@ -6,7 +6,7 @@
     private int level;
 
     /**
-     * Constructor for objects of class Employee
+     * Constructor for objects of class Lecturer
      * @param level constructs the level of wage for the lecturer
      *              and if the level isn't valid (using validLecturerLevel)
      *              it sets the default value to 1.
@@ -22,6 +22,9 @@
 
     }
 
+    //-------
+    //methods
+    //-------
     /**
      * calculates the salary for the Lecturer by using the level we constructed.
      */
@@ -62,6 +65,9 @@
 
     }
 
+    //-------
+    //toString
+    //-------
     /**
      * Builds a String representing a user friendly representation of the object state
      * @return Details of the specific users level.

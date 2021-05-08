@@ -7,7 +7,7 @@ public class AdminWorker extends Employee{
     private int grade;
 
     /**
-     * Constructor for objects of class Employee
+     * Constructor for objects of class AdminWorker
      * @param grade constructs the grade of wage for the AdminWorker
      *              and if the Grade isn't valid (using Grade)
      *              it sets the default value to 1.
@@ -23,6 +23,9 @@ public class AdminWorker extends Employee{
         }
     }
 
+    //-------
+    //methods
+    //-------
     /**
      * calculates the salary for the AdminWorker by using the grade we constructed
      * with an addition of the FIXED_BONUS.
@@ -63,6 +66,9 @@ public class AdminWorker extends Employee{
                 && this.getGrade() == otherAdminWorker.grade;
     }
 
+    //-------
+    //toString
+    //-------
     /**
      * Builds a String representing a user friendly representation of the object state
      * @return Details of the specific users grade.

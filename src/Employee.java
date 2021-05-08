@@ -38,6 +38,9 @@ public abstract class Employee {
         }
     }
 
+    //-------
+    //methods
+    //-------
     /**
      * This (abstract) method promises that any concrete subclass
      * of Employee will implement this method. This method will
@@ -112,6 +115,9 @@ public abstract class Employee {
                 this.ppsNumber.equals(otherEmployee.getPpsNumber()) );
     }
 
+    //-------
+    //toString
+    //-------
     /**
      * Builds a String representing a user friendly representation of the object state
      * @return Details of the specific users name and pps number
