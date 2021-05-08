@@ -104,7 +104,7 @@ public class UtilitiesTest {
     public void validIndex() {
         ArrayList<String> newName = new ArrayList<String>();
         newName.add("Mairead");
-        newName.add("Moses");
+        newName.add("Jack");
         newName.add("Cathal");
         assertTrue(Utilities.validIndex(1, newName));
         assertTrue(Utilities.validIndex(2, newName));
