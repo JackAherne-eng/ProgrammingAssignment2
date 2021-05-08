@@ -10,9 +10,12 @@ public abstract class Employee {
 
     /**
      * Constructor for objects of class Employee
-     * @param firstName of the Employee
-     * @param secondName of the Employee
-     * @param ppsNumber of the Employee
+     * @param firstName of the Employee and sets the String to a max
+     *                  of 10 characters.
+     * @param secondName of the Employee and sets the String to a max
+     *                   of 10 characters.
+     * @param ppsNumber of the Employee and sets the String to having
+     *                  the first 7 and digits and the last 2 as characters.
      */
     public Employee(String firstName, String secondName, String ppsNumber)
     {
@@ -35,6 +38,11 @@ public abstract class Employee {
         }
     }
 
+    /**
+     * This (abstract) method promises that any concrete subclass
+     * of Employee will implement this method. This method will
+     * calculate the total salary including bonuses. It will return a double.
+     */
     public abstract double calculateSalary();
 
     //-------
@@ -94,6 +102,10 @@ public abstract class Employee {
         }
     }
 
+    /**
+     * Makes sure that firstName of the Employee is
+     * equals the otherEmployee.
+     */
     public boolean equals(Employee otherEmployee){
         return  (this.firstName.equals(otherEmployee.getFirstName()) &&
                 this.secondName.equals(otherEmployee.getSecondName())  &&
