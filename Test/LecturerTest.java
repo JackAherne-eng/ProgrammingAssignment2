@@ -18,21 +18,21 @@ public class LecturerTest {
 
     @Test
     public void testConstructor() {
-        assertEquals(2, lecturerValid.getGrade());
-        assertEquals(1, lecturerInvalid.getGrade());
+        assertEquals(2, lecturerValid.getLevel());
+        assertEquals(1, lecturerInvalid.getLevel());
     }
 
     @Test
     public void setLevel() {
-        assertEquals(2, lecturerValid.getGrade());
+        assertEquals(2, lecturerValid.getLevel());
         lecturerValid.setLevel(1);
-        assertEquals(1, lecturerValid.getGrade());
+        assertEquals(1, lecturerValid.getLevel());
         lecturerValid.setLevel(0);
-        assertEquals(1, lecturerValid.getGrade());
+        assertEquals(1, lecturerValid.getLevel());
         lecturerValid.setLevel(3);
-        assertEquals(3, lecturerValid.getGrade());
+        assertEquals(3, lecturerValid.getLevel());
         lecturerValid.setLevel(4);
-        assertEquals(3, lecturerValid.getGrade(), 0.01);
+        assertEquals(3, lecturerValid.getLevel(), 0.01);
     }
 
     @Test
