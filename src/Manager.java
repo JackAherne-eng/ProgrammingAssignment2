@@ -73,14 +73,19 @@ public class Manager extends Employee{
     //-------
     //getters
     //-------
-
+    /**
+     * Returns the grade
+     */
+    public int getGrade() {
+        return grade;
+    }
+    /**
+     * Returns the dept
+     */
     public ArrayList<Employee> getDept() {
         return dept;
     }
 
-    public void setDept(ArrayList<Employee> dept) {
-        this.dept = dept;
-    }
 
     //-------
     //setters
@@ -89,14 +94,18 @@ public class Manager extends Employee{
      * Updates the grade to the value passed as a parameter
      * @param grade To the new level.
      */
-    public int getGrade() {
-        return grade;
-    }
-
     public void setGrade(int grade) {
         if(Utilities.Grade(grade)) {
             this.grade = grade;
         }
+    }
+
+    /**
+     * Updates the dept to the value passed as a parameter
+     * @param dept To the new dept.
+     */
+    public void setDept(ArrayList<Employee> dept) {
+        this.dept = dept;
     }
 
     /**
