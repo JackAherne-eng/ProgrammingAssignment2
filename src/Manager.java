@@ -8,9 +8,15 @@ import java.util.ArrayList;
  */
 public class Manager extends Employee{
 
+    //-------
+    //fields
+    //-------
     private ArrayList<Employee> dept;
     private int grade;
 
+    //-------
+    //constructor
+    //-------
     /**
      * Constructor for objects of class Manager
      * @param grade constructs the grade of wage for the Manager

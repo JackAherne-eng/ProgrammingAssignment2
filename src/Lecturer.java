@@ -3,8 +3,14 @@
  */
  public class Lecturer extends Employee {
 
+    //-------
+    //fields
+    //-------
     private int level;
 
+    //-------
+    //constructor
+    //-------
     /**
      * Constructor for objects of class Lecturer
      * @param level constructs the level of wage for the lecturer

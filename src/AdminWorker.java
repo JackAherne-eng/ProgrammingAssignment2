@@ -3,9 +3,15 @@
  */
 public class AdminWorker extends Employee{
 
+    //-------
+    //fields
+    //-------
     private static final float FIXED_BONUS = 200;
     private int grade;
 
+    //-------
+    //constructor
+    //-------
     /**
      * Constructor for objects of class AdminWorker
      * @param grade constructs the grade of wage for the AdminWorker

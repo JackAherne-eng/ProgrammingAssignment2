@@ -54,5 +54,23 @@
 //    }
 //    System.out.println("Exiting program...");
 //    System.exit(0);
-//}
+//    }
+//    //-------
+//    //fields
+//    //-------
+//
+//
+//    //-------
+//    //constructor
+//    //-------
+//    public Driver() {
+//        empAPI = new EmployeeAPI();
+//        school = new School("Science and Computing"); //setting up school as our own!
+//    }
+//
+//    //-------
+//    //methods
+//    //-------
+//    Driver app = new Driver();
+//    app.run();
 //}

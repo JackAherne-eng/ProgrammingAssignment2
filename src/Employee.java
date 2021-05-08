@@ -4,10 +4,16 @@
 
 public abstract class Employee {
 
+    //-------
+    //fields
+    //-------
     private String firstName;
     private String secondName;
     private String ppsNumber;
 
+    //-------
+    //constructor
+    //-------
     /**
      * Constructor for objects of class Employee
      * @param firstName of the Employee and sets the String to a max
