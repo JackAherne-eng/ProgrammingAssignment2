@@ -9,6 +9,21 @@ import static org.junit.Assert.*;
 
 public class UtilitiesTest {
 
+    @Test
+    public void validEmail() {
+        assertTrue(Utilities.validEmail(("John@farm.ie")));
+        assertTrue(Utilities.validEmail(("@.")));
+        assertFalse(Utilities.validEmail(("johnfarm.ie")));
+        assertFalse(Utilities.validEmail(("john@farmie")));
+    }
+
+    @Test
+    public void onlyContainsNumbers() {
+        assertTrue(Utilities.onlyContainsNumbers(("43")));
+        assertTrue(Utilities.onlyContainsNumbers(("67")));
+        assertFalse(Utilities.onlyContainsNumbers(("john")));
+        assertFalse(Utilities.onlyContainsNumbers(("farm.89")));
+    }
 
     @Test
     public void validPPS() {
@@ -114,21 +129,33 @@ public class UtilitiesTest {
 
     }
 
+    @Test
+    public void Grade() {
+        assertTrue(Utilities.Grade(1));
+        assertTrue(Utilities.Grade(4));
+        assertTrue(Utilities.Grade(7));
+        assertFalse(Utilities.Grade(0));
+        assertFalse(Utilities.Grade(8));
+
+    }
+
+    @Test
     public void getSalaryForLecturerLevel() {
         assertEquals(1000, Utilities.getSalaryForLecturerLevel(1), .01);
         assertEquals(2000, Utilities.getSalaryForLecturerLevel(2), .01);
         assertEquals(3000, Utilities.getSalaryForLecturerLevel(3), .01);
-        assertEquals(-1, Utilities.getSalaryForLecturerLevel(0), .01);
-        assertEquals(-1, Utilities.getSalaryForLecturerLevel(4), .01);
+        assertEquals(0, Utilities.getSalaryForLecturerLevel(0), .01);
+        assertEquals(0, Utilities.getSalaryForLecturerLevel(4), .01);
 
     }
 
+    @Test
     public void getSalaryForAdminGrade() {
         assertEquals(700, Utilities.getSalaryForAdminGrade(1), .01);
         assertEquals(1400, Utilities.getSalaryForAdminGrade(2), .01);
         assertEquals(2100, Utilities.getSalaryForAdminGrade(3), .01);
-        assertEquals(-1, Utilities.getSalaryForAdminGrade(0), .01);
-        assertEquals(-1, Utilities.getSalaryForAdminGrade(4), .01);
+        assertEquals(0, Utilities.getSalaryForAdminGrade(0), .01);
+        assertEquals(0, Utilities.getSalaryForAdminGrade(9), .01);
 
     }
 }
